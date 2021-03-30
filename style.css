@@ -90,9 +90,11 @@ a:hover {
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Baloo Bhai 2', cursive; */
     font-family: 'Baloo Bhai 2', cursive;
-    height: 14200px;
+    height: 14500px;
     /* padding-left: 2rem; */
     /* margin-left: 1rem; */
+    border-left: 3px solid black;
+    padding-left: 1rem;
 }
 
 .image {
