@@ -40,6 +40,7 @@
 }
 
 #page-wrap {
+    display: flex;
     position: relative;
     /* position: fixed; */
 }
@@ -51,8 +52,10 @@ main {
 }
 
 #header {
-    /* position: fixed; */
+    position: fixed;
+    z-index: 1;
     grid-column: 1/-1;
+    margin-bottom: 4rem;
     /* border: 1px solid black; */
     /* background-color: #7952B3; */
     /* background-color: black; */
@@ -86,6 +89,10 @@ a:hover {
 #sidebar {
     width: 150px;
     position: fixed;
+    margin-top: 4rem;
+    width: 10%;
+    /* position: sticky */
+    /* top: 0px; */
     /* height: fit-content; */
     height: 15000px;
     /* background-color: silver; */
@@ -112,7 +119,9 @@ a:hover {
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Baloo Bhai 2', cursive; */
     font-family: 'Baloo Bhai 2', cursive;
+    margin-top: 6rem;
     height: 14500px;
+    width: 80%;
     /* padding-left: 2rem; */
     /* margin-left: 1rem; */
     border-left: 3px solid var(--black);
