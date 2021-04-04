@@ -3,6 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Pacifico&display=swap');
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #808080;
+    --background_white: #ddd;
+    --antiquewhite: #faebd7;
+    --error: #aa1a13;
+    --warning: #b4710c;
+    --info: #653088;
+    --sucess: #0fd884;
+    --default_button: #D5D5D5;
+    --primary_button: #ff0044;
+    --primary_button_hover: #ffff14;
+    --sucess_btn: #1ad61a;
+    --error_btn: #e41111;
+    --secondary_btn: #1665a7;
+    --info_btn: #2581cc;
+    --input_shadow: #34bb51;
+    --rating: #ffe400;
+    --navbar: #7952B3;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -52,13 +74,13 @@ main {
 }
 
 a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-weight: 400;
 }
 
 a:hover {
-    color: black;
+    color: var(--black);
 }
 
 #sidebar {
@@ -78,12 +100,12 @@ a:hover {
 }
 
 #sidebar li:hover {
-    background-color: gray;
+    background-color: var(--gray);
 }
 
 #sidebar a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 #content {
@@ -93,37 +115,38 @@ a:hover {
     height: 14500px;
     /* padding-left: 2rem; */
     /* margin-left: 1rem; */
-    border-left: 3px solid black;
+    border-left: 3px solid var(--black);
+    ;
     padding-left: 1rem;
 }
 
 .image {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 50%;
     position: relative;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: 2rem;
 }
 
 .image2 {
     width: 75px;
     height: 75px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 50%;
     position: relative;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: 2rem;
 }
 
 .image3 {
     width: 100px;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 50%;
     position: relative;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: 2rem;
 }
 
@@ -134,9 +157,9 @@ a:hover {
 
 .btn {
     border-radius: 5px;
-    background-color: #ddd;
+    background-color: var(--background_white);
     border: none;
-    color: black;
+    color: var(--black);
     padding: 5px 10px;
     text-align: center;
     font-size: 12px;
@@ -145,7 +168,7 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: antiquewhite;
+    background-color: var(--antiquewhite);
 }
 
 #alert_heading {
@@ -154,33 +177,33 @@ a:hover {
 }
 
 #error_alert {
-    border: 1px solid black;
-    background-color: #aa1a13;
-    color: white;
+    border: 1px solid var(--black);
+    background-color: var(--error);
+    color: var(--white);
     margin: 1rem;
     padding: 1rem;
 }
 
 #warning_alert {
-    border: 1px solid black;
-    background-color: #b4710c;
-    color: white;
+    border: 1px solid var(--black);
+    background-color: var(--warning);
+    color: var(--white);
     margin: 1rem;
     padding: 1rem;
 }
 
 #info_alert {
     border: 1px solid black;
-    background-color: #653088;
-    color: white;
+    background-color: var(--info);
+    color: var(--white);
     margin: 1rem;
     padding: 1rem;
 }
 
 #sucess_alert {
-    border: 1px solid black;
-    background-color: #0fd884;
-    color: white;
+    border: 1px solid var(--black);
+    background-color: var(--sucess);
+    color: var(--white);
     margin: 1rem;
     padding: 1rem;
 }
@@ -213,7 +236,7 @@ a:hover {
     position: relative;
     top: 17px;
     left: 100px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .icon_badge {
@@ -230,8 +253,8 @@ a:hover {
 .avatar_badge {
     font-size: 46px;
     position: relative;
-    top: 37px;
-    left: -42px;
+    top: 40px;
+    left: -34px;
 }
 
 .button_head {
@@ -241,43 +264,43 @@ a:hover {
 }
 
 #btn-default {
-    width: 170px;
+    width: 120px;
     height: 50px;
     margin-top: 15px;
     border: none;
-    background-color: #D5D5D5;
+    background-color: var(--default_button);
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn-primary {
-    width: 170px;
+    width: 120px;
     height: 50px;
     margin-top: 15px;
     border: none;
     color: white;
-    background-color: rgb(255, 0, 68);
+    background-color: var(--primary_button);
     border-radius: 4px;
-    box-shadow: inset 0 0 0 rgb(255, 255, 20);
+    box-shadow: inset 0 0 0 var(--primary_button_hover);
     transition: ease-out 0.3s;
-    font-size: 2rem;
+    font-size: 1.5rem;
     outline: none;
 }
 
 .btn-primary:hover {
-    box-shadow: inset 170px 0 0 rgb(255, 255, 20);
+    box-shadow: inset 170px 0 0 var(--primary_button_hover);
     cursor: pointer;
-    color: black;
+    color: var(--black);
 }
 
 .btn-secondary {
-    width: 170px;
+    width: 120px;
     height: 50px;
     margin-top: 15px;
-    background-color: #1665a7;
+    background-color: var(--secondary_btn);
     border: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn-secondary:hover {
@@ -286,33 +309,33 @@ a:hover {
 }
 
 .btn-info {
-    width: 170px;
+    width: 120px;
     height: 50px;
     margin-top: 15px;
-    background-color: #2581cc;
+    background-color: var(--info_btn);
     border: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn-sucess {
-    width: 170px;
+    width: 120px;
     height: 50px;
     margin-top: 15px;
-    background-color: rgb(26, 214, 26);
+    background-color: var(--sucess_btn);
     border: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn-error {
-    width: 170px;
+    width: 120px;
     height: 50px;
     margin-top: 15px;
-    background-color: rgb(228, 17, 17);
+    background-color: var(--error_btn);
     border: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .responsive_img {
@@ -334,7 +357,7 @@ a:hover {
 }
 
 .card1 {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     width: 300px;
     height: 300px;
     margin: 20px;
@@ -376,7 +399,7 @@ a:hover {
 
 .card-primary {
     height: 75px;
-    border-bottom: 1px soli black;
+    border-bottom: 1px soli var(--black);
 }
 
 .btn-card {
@@ -412,7 +435,7 @@ a:hover {
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
     border: 1px solid #cccccc;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .card2:before {
@@ -467,8 +490,8 @@ a:hover {
 
 input:focus {
     outline: none !important;
-    border-color: #34bb51;
-    box-shadow: 0 0 10px #34bb51;
+    border-color: var(--input_shadow);
+    box-shadow: 0 0 10px var(--input_shadow);
 }
 
 .input-error {
@@ -478,8 +501,8 @@ input:focus {
 
 .input-error:focus {
     outline: none !important;
-    border-color: #34bb51;
-    box-shadow: 0 0 10px #34bb51;
+    border-color: var(--input_shadow);
+    box-shadow: 0 0 10px var(--input_shadow);
 }
 
 .stacked_li {
@@ -533,7 +556,7 @@ input:focus {
 }
 
 .rating-css div {
-    color: #ffe400;
+    color: var(--rating);
     font-size: 30px;
     font-family: sans-serif;
     font-weight: 800;
@@ -548,7 +571,7 @@ input:focus {
 
 .rating-css input+label {
     font-size: 60px;
-    text-shadow: 1px 1px 0 #ffe400;
+    text-shadow: 1px 1px 0 var(--rating);
     cursor: pointer;
 }
 
@@ -630,7 +653,7 @@ input:focus {
     text-align: end;
     margin-right: 5rem;
     height: 5rem;
-    background: #7952B3;
+    background: var(--navbar);
 }
 
 .nav li {
