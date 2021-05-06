@@ -386,6 +386,25 @@ a:hover {
     border-bottom: 1px soli var(--black);
 }
 
+.media_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 310px;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid var(--black);
+    /* background-color: #282c34; */
+    border-radius: 10px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.media_card:hover {
+    background-color: rgb(207, 202, 202);
+    color: black;
+}
+
 .btn-card {
     display: block;
     margin: auto;
@@ -632,12 +651,31 @@ input:focus {
     color: crimson;
 }
 
-.nav {
+
+/* .nav {
     border: 2px solid black;
     text-align: end;
     margin-right: 5rem;
     height: 5rem;
     background: var(--navbar);
+} */
+
+.nav {
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    /* display: flex;
+    justify-content: center; */
+    text-align: end;
+    /* background-color: #39445a; */
+    height: 5rem;
+    background: var(--navbar);
+    font-size: 2vw;
+    padding-bottom: 15px;
+    /* color: white; */
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 1px 5px black;
 }
 
 .nav li {
