@@ -323,7 +323,7 @@ a:hover {
 }
 
 .responsive_img {
-    max-width: 100%;
+    max-width: 80%;
     display: block;
     height: auto;
     margin-left: 20px;
@@ -333,6 +333,7 @@ a:hover {
     border-radius: 50%;
     width: 400px;
     height: 400px;
+    max-width: 40vw;
 }
 
 .display-grid {
