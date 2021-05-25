@@ -323,7 +323,7 @@ a:hover {
 }
 
 .responsive_img {
-    max-width: 80%;
+    max-width: 50vw;
     display: block;
     height: auto;
     margin-left: 20px;
