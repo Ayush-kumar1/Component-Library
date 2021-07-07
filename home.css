@@ -58,9 +58,33 @@ img {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
+    position: relative;
+    left: 30rem;
+}
+
+.btn-primary-2 {
+    width: 170px;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    background-color: var(--navbar);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 var(--btn_shadow);
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    position: relative;
+    left: 32rem;
 }
 
 .btn-primary:hover {
+    box-shadow: inset 170px 0 0 var(--btn_shadow);
+    cursor: pointer;
+    color: black;
+}
+
+.btn-primary-2:hover {
     box-shadow: inset 170px 0 0 var(--btn_shadow);
     cursor: pointer;
     color: black;
@@ -80,4 +104,38 @@ a:hover {
     /* font-family: 'Pacifico', cursive; */
     font-family: 'Balsamiq Sans', cursive;
     /* border: 2px solid black; */
+}
+
+.intro {
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 10rem;
+        left: 18rem;
+    }
+    .btn-primary {
+        left: 15rem;
+        margin-top: 3rem;
+    }
+    .btn-primary-2 {
+        left: 17rem;
+        margin-top: 6rem;
+    }
+    p {
+        margin-left: 18rem;
+        margin-top: 2rem;
+    }
+    .intro {
+        text-align: left;
+    }
 }
