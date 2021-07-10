@@ -836,4 +836,7 @@ input:focus {
     .grid2 {
         width: 10rem;
     }
+    .sidenav {
+        display: none;
+    }
 }
