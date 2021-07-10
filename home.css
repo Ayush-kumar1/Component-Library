@@ -121,15 +121,17 @@ a:hover {
     }
     img {
         width: 10rem;
-        left: 18rem;
+        left: 6rem;
     }
     .btn-primary {
-        left: 15rem;
+        left: 1rem;
         margin-top: 3rem;
+        width: 7rem;
     }
     .btn-primary-2 {
-        left: 17rem;
+        left: 2rem;
         margin-top: 6rem;
+        width: 7rem;
     }
     p {
         margin-left: 18rem;
@@ -137,5 +139,7 @@ a:hover {
     }
     .intro {
         text-align: left;
+        position: relative;
+        left: -10rem;
     }
 }
