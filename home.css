@@ -118,6 +118,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
+        width: 28rem;
     }
     img {
         width: 10rem;
@@ -134,8 +135,8 @@ a:hover {
         width: 7rem;
     }
     p {
-        margin-left: 18rem;
-        margin-top: 2rem;
+        margin-left: 13rem;
+        font-size: 1.5rem;
     }
     .intro {
         text-align: left;
